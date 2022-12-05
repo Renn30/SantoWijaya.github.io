@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/*
+    font-family: 'Poppins', sans-serif;
+*/
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+a:link, a:visited{
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    transition: 300ms;
+}
+
+a:hover{
+    box-shadow: 0px 2px 0px 0px white;
+}
+
+header{
+    font-size: 1rem;    
+}
+
+nav{
+    background-color: rgb(180, 180, 180);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em;
+    width: 100%;
+    z-index: 1;
+    position:fixed
+}
+nav> ul >a> li {
+    color: white;
+}
+nav > ul {
+    display: flex;
+    gap: 4em;
+}
+/*section-1*/
+
+.section-1{
+    background-color: rgb(40, 40, 40);
+    color: white;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+    gap: .5em;
+    font-size: 1rem;
+}
+
+.section-1>h2{
+    letter-spacing: .1em;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.section-1> a> button{
+    border-radius: 1em;
+    padding: .3em 2em;
+    background-color: grey;
+    border: none;
+    margin-top: 2em;
+    color: white;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+    transition: 300ms;
+}
+
+.section-1> a>button:hover{
+    background-color: white;
+    color: black;
+}
+
+.section-1> a {
+    box-shadow: 0px 0px 0px 0px;
+}
+
+/*section-1*/
+
+/*section-2*/
+
+.section-2{
+    font-family: 'Poppins', sans-serif;
+    padding: 1em;
+    margin-top: 5em;
+}
+.personal{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    gap: 3em;
+}
+
+.personal> p{
+    font-weight: 200;
+    padding-bottom: 1em;
+    border-bottom: solid 3px grey;
+}
+
+.personal> img{
+    width: 30%;
+    height: auto;
+}
+.section-2>.personal> span{
+    font-weight: 700;
+    font-size: 1.5em;
+}
+.language {
+    display: flex;
+    gap: 3em;
+}
+.language > img{
+    width: 50%;
+    height: auto;
+}
+
+.hobbies{
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 5em;
+    gap: 1em;
+}
+
+.hobbies-img{
+    display: flex;
+}
+
+.column>img{
+    width: 50%;
+    height: auto;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*section-2*/
+
+/*section-3*/
+.section-3{
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5em;
+}
+.section-3> .select-menu{
+
+    background-color: grey;
+    display: flex;
+    gap: 3em;
+    justify-content: center;
+    width: 100%;
+    padding :1em 0em;
+}
+
+.select-menu> a>li{
+    color: white;
+    letter-spacing: .1em;
+}
+
+.grid-1, .grid-2, .grid-3{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 80%;
+    gap: 1em;
+}
+
+.grid-1> img, .grid-2>img, .grid-3>img{
+    width: 100%;
+    height: auto;
+}
+
+.photography{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1em;
+}
+
+
+/*section-3*/
+
+/*footer*/
+footer{
+    background-color: grey;
+    margin-top: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+    padding: 1em 0em;
+}
+
+footer >a> svg{
+    fill: white;
+    cursor: pointer;
+}
+/*footer*/
+
+
+
+
+
+@media (min-width:600px) {
+    .section-2{
+        display: flex;
+        gap: 5em;
+    }
+    .section-2>h2{
+        white-space: nowrap;
+        border-right: solid 3px grey;
+        padding: .1em 1em;
+    }
+    .hobbies{
+        text-align: center;
+    }
+
+    .grid-1{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .grid-2{
+        grid-template-columns: repeat(3,1fr);
+    } 
+    .grid-3{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    
+}
